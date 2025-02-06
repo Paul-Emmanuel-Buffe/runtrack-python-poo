@@ -17,7 +17,7 @@ class Livre:
             self._disponible = False
             print("Livre emprunté")
         else:
-            print("Le livre doit être diponible pour pouvoir l'emprunter")
+            print("Le livre doit être disponible pour pouvoir l'emprunter")
 
 l = Livre("GRT3", "UUYUY", 56) # Partie vérification
 l.emprunter()
