@@ -5,18 +5,9 @@ class Tache:
         self.titre = input("Veuillez indiquer la tache à plannifier : ")
         self.description = input("veuillez décrire la tache à plannifier : ")
         self.statut = "à faire"
-        self.liste = liste
+        self.liste = liste # Ici se fait le lien avec l'instance de ListeTaches
 
-         
-    def set_statut(self, statut):
-        if self.statut in ["à faire", "terminé"]:
-            self.statut = statut
-        else:
-            print('Statut de la tâche mal renseigné, il ne peut être que "à faire" ou "terminé"')
-
-
-    
-    def creat_dicto (self):
+    def creat_dicto (self): #Création de la tache sous forme de dictionnaire.
         titre = self.titre
         description = self.description
         statut = self.statut
@@ -77,4 +68,4 @@ print(ma_liste.get_liste())
 ma_liste.change_statut() # Modification du statut d'une tache dans la liste
 print(ma_liste.get_liste())
 
-print(ma_liste.filtrer_liste()) # Affichage de la liste avec les 
+print(ma_liste.filtrer_liste()) # Affichage de la liste avec taches terminées
