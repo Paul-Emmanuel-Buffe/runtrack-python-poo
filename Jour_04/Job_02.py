@@ -21,9 +21,9 @@ class Eleve (Personne):
     def afficher_age (self):
         print(f"J'ai {self.age} ans.")
 
-class Professeur (Personne) :
-    def __init__ (self,age, matière_enseignée):
-        super() .__init__(age)
+class Professeur (Personne):
+
+    def __init__ (self, matière_enseignée):
         self._matière_enseignée = matière_enseignée
 
     def enseigner (self):
@@ -32,5 +32,12 @@ class Professeur (Personne) :
 
 # Début des essais
 paul = Eleve(Personne)
+paul.bonjour()
 paul.aller_cours()
+paul.modifier_age()
 paul.afficher_age()
+
+pierre = Professeur(Personne)
+pierre.bonjour()
+pierre.modifier_age()
+pierre.enseigner()
