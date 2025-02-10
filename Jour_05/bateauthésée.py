@@ -106,17 +106,12 @@ racing_ship.add_parts(gouvernail)
 racing_ship.add_parts(voile1)
 racing_ship.add_parts(voile2)
 
-# Lancer le menu interactif
+# Lanccement du menu
 menu(racing_ship)
 
 
 
-
-                                
-                               
-                        
-
-# Instance De Ship:
+# Instance De Ship (début des tests)
 bateau = Ship("bateau_thesee")
 
 coque = Part("Coque", "Pin")# instance de pièce du bateau
